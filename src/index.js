@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom'
 
 import reportWebVitals from './reportWebVitals'
 import * as serviceWorker from './serviceWorker'
-import load from './load'
+import loadDevTools from './loadDevTools'
 import Decorator from './Decorator'
 import App from './App'
 
-load(() => {
+loadDevTools(() => {
   ReactDOM.render(
     <StrictMode>
       <Decorator>
