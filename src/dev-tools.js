@@ -22,7 +22,7 @@ const ToolBox = styled(Box)`
   position: fixed;
   bottom: ${({ bottom }) => bottom}px;
   background-color: rgba(255, 255, 255, 0.08);
-  transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+  transition: all 0.3s cubic-bezier(0, 1, 0.5, 1);
 `
 
 const ToggleBox = styled(Button)`
