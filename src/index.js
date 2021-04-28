@@ -1,17 +1,18 @@
 import React, { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 
-import load from './load'
-import { ColorModeScript } from '@chakra-ui/react'
-import App from './App'
 import reportWebVitals from './reportWebVitals'
 import * as serviceWorker from './serviceWorker'
+import load from './load'
+import Decorator from './Decorator'
+import App from './App'
 
 load(() => {
   ReactDOM.render(
     <StrictMode>
-      <ColorModeScript />
-      <App />
+      <Decorator>
+        <App />
+      </Decorator>
     </StrictMode>,
     document.getElementById('root')
   )
